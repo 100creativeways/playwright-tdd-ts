@@ -19,7 +19,7 @@ export const test = base.extend({page: async ({ page }, use: Function, testInfo:
 
     await use(page); // Use the page in the test functions
 
-    await takeScreenshotIfFailed(page, testInfo); // After the test, take a screenshot if it failed
+   // await takeScreenshotIfFailed(page, testInfo); // After the test, take a screenshot if it failed
 
 },
 });
@@ -68,7 +68,7 @@ export class CommonUI {
 
 }
 
-// Takes a screenshot of the page if the test has failed.
+/* Takes a screenshot of the page if the test has failed.
 async function takeScreenshotIfFailed(page: Page, testInfo: TestInfo) {
   if (testInfo.status !== "failed") return;
 
@@ -82,3 +82,4 @@ async function takeScreenshotIfFailed(page: Page, testInfo: TestInfo) {
   await page.screenshot({ path: screenshotPath, fullPage: true });
 
 }
+*/

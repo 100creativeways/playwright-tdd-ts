@@ -7,7 +7,7 @@ test.describe("Next button on selecting payment page", () => {
 
     test.beforeEach(async ({ page }) => {
         paymentPlanPage = new PaymentPlanPage(page);
-        await CommonUI.completeStartApplicationForm(page, "Muhtar", "M", "muhtar.mahmoud@example.com", "1234567890");
+        await CommonUI.completeStartApplicationForm(page, "Ava", "M", "ava@example.com", "1234567890");
     });
 
     test('Verify that the next button is displayed', async ({page}) => {
