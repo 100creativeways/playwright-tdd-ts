@@ -66,7 +66,13 @@ export class CommonUI {
     await this.reviewPaymentPage.enterZipCode(zipCode);
   }
 
+  // Please add any other UI methods you need here...
+
 }
+
+
+
+
 
 /* Takes a screenshot of the page if the test has failed.
 async function takeScreenshotIfFailed(page: Page, testInfo: TestInfo) {
@@ -80,6 +86,5 @@ async function takeScreenshotIfFailed(page: Page, testInfo: TestInfo) {
   const screenshotPath = path.join(screenshotDir, screenshotFileName);
   
   await page.screenshot({ path: screenshotPath, fullPage: true });
-
 }
 */
